@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon  class="back" name="arrow-back" (click)="versBack()"></ion-icon>
+        </ion-col>
+        <ion-col size="11">
+          <ion-title>Gazeuse</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor ="let prod of produits" size="4"  class="ion-no-padding" >
+      <ion-card>
+        <ion-card  >
+          <ion-icon name="heart-outline"></ion-icon>
+          <img  (click)= "voirDetailPage(prod)"  [src]="prod.images" alt="">   
+      </ion-card>
+      
+        <ion-icon name="cart-outline" (click)="versPagesPannier(prod)" ></ion-icon> 
+      
+      <ion-label>{{prod.nom}}</ion-label>
+    </ion-card>
+      </ion-col>
+      
+    </ion-row>
+          </ion-grid>
+</ion-content>

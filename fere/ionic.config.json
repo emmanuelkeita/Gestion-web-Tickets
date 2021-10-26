@@ -1,0 +1,7 @@
+{
+  "name": "fere",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

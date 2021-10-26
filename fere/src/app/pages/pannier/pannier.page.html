@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon  class="back" name="arrow-back" (click)="versBack()"></ion-icon>
+        </ion-col>
+        <ion-col size="11">
+          <ion-title>pannier</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ 
+ <!-- <ion-grid>
+   <ion-row>
+     <ion-col>
+      <div >
+          
+      </div>
+      <div >
+        <label >{{prod.nom}}</label>
+      </div>
+      <div>
+        <label >{{prod.type}}</label>
+      </div>
+      <div>
+        <label >{{prod.volume}}</label>
+      </div>
+     </ion-col>
+   </ion-row>
+ </ion-grid> -->
+
+
+
+ 
+
+ <ion-card   *ngFor="let prod of datas">
+  
+<div class="bko">
+    
+   <div class="image">
+    <img class="img" [src]='prod.images ' >
+     
+    <ion-label >
+      <h6>{{prod.nom}}</h6>
+      <h6>{{prod.volume}}</h6>
+      <h6>{{(prod.prix * prod.nombre)}}</h6>
+      <h6>{{prod.nom}}</h6>
+    </ion-label>
+  </div> 
+  
+    <div>
+      <ion-icon  name="close-outline" class="ic"></ion-icon>
+      <div class="gel">
+        <div class="vol1">
+         <div class="ion-activatable ripple-parent">
+          <ion-icon (click)="soustraire(prod)" name="remove-outline" slot='center'></ion-icon>
+         </div>
+        </div>
+        <div class="vol"><p> {{prod.nombre}} </p></div>
+        <div class="vol2"><ion-icon (click)="ajouter(prod)" name="add-outline"></ion-icon></div>
+      </div>
+    </div>
+  </div>  
+
+ </ion-card>
+ 
+</ion-content>

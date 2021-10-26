@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{produit.nom}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+<!-- 
+  <ion-grid>
+    <ion-row>
+  
+      <ion-col size="4"  class="ion-no-padding" size="4" >
+        
+        <ion-card>
+          <ion-icon name="heart-outline" ></ion-icon>
+          <img  src="assets/images/im5.jpg" alt="">
+      
+      <ion-icon name="cart-outline" (click)="versPagesPannier()"></ion-icon>
+    </ion-card>
+   
+      </ion-col>
+  
+      <ion-col size="4"  class="ion-no-padding" size="4" >
+        <ion-card>
+          <ion-icon name="heart-outline" ></ion-icon>
+          <img  src="assets/images/im5.jpg" alt="">
+      
+      <ion-icon name="cart-outline" (click)="versPagesPannier()"></ion-icon>
+    </ion-card>
+      </ion-col>
+  
+      <ion-col size="4"  class="ion-no-padding" size="4" >
+        
+          <ion-card>
+          <ion-icon name="heart-outline" ></ion-icon>
+          <img  src="assets/images/im5.jpg" alt="">
+      
+      <ion-icon name="cart-outline" (click)="versPagesPannier()"></ion-icon>
+    </ion-card>
+      </ion-col>  
+  </ion-row>
+  </ion-grid> -->
+
+ 
+  <ion-card >
+   
+    <ion-card-content >
+      
+      <img [src]="produit.images" alt="">
+      <ion-grid>
+        <ion-row>
+          <ion-col size='4'>
+            
+              <ion-fab-button>
+                <ion-icon name="cart-outline" (click)="versPagesPannier(prod)" ></ion-icon> 
+            </ion-fab-button>
+            
+           
+          </ion-col>
+          <ion-col size = '4'>
+            <h2>{{produit.nom}}</h2>
+          </ion-col>
+          <ion-col size = '4'>
+            <h2>{{produit.volume}}</h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+     
+    </ion-card-content>
+  </ion-card>
+</ion-content>

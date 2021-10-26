@@ -1,0 +1,76 @@
+.back{
+    font-size: 35px;
+}
+th{
+    border: 1px solid black;
+    width: 28px;
+}
+tr{
+    border-radius: 25%;
+   
+}
+.vol1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 23px;
+    height: 20px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.vol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 23px;
+    height: 20px;
+
+}
+.vol2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 23px;
+    height: 20px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+
+}
+.gel{
+    display : flex;
+    
+    padding-top: 61px;
+}
+
+.image{
+    display : flex;
+}
+
+ion-item{
+    height: 30%;
+}
+
+.bko{
+    display : flex;
+    justify-content: space-around;
+}
+.start{
+    margin-left: -1px;
+}
+.img{
+    max-width: 47%;
+}
+ion-label{
+    margin-top: 21px;
+}
+ion-icon,p{
+    color:black;
+}
+.ic{
+    margin-left: 50px;
+    font-size: 20px;
+}
