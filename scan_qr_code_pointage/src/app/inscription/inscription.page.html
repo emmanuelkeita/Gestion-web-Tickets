@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title >inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <img class="img" src="assets/image/02.jpeg"  alt="">
+<ion-item>
+  <ion-label>Prenom</ion-label>
+  <ion-input [(ngModel)]="user.prenom" type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Nom</ion-label>
+  <ion-input [(ngModel)]="user.nom" type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Email</ion-label>
+  <ion-input [(ngModel)]="user.email" type="mail"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Password</ion-label>
+  <ion-input [(ngModel)]="user.pass" type="Password"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Confirmer Password</ion-label>
+  <ion-input type="Password"></ion-input>
+</ion-item> <br>
+
+<div>
+  <ion-fab  slot="end" horizontal="center">
+    <ion-fab-button (click)="photoUser()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</div><br><br><br><br>
+
+<ion-button (click)=" inscrire()" expand="block" color="success">Valider</ion-button>
+
+
+<img  [src]=userPhoto *ngIf="userPhoto">
+
+
+</ion-content>

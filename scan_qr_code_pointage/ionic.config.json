@@ -1,0 +1,7 @@
+{
+  "name": "scan_qr_code_pointage",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

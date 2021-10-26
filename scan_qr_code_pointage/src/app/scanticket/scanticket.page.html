@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>scanticket</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="content" *ngIf="eai">
+    <ion-card >
+      <h1 >{{eai}}</h1>
+    </ion-card>
+    
+  </div>
+
+  <!-- <div class="content"  *ngIf="eais">
+    <ion-card>
+      <h5>{{rec.ticket}}</h5>
+      <h5>{{rec.categorie.nom}}: {{rec.categorie.prix}} </h5>
+      <h5>{{rec.categorie.conso}}</h5>
+      <h5>{{rec.nombreTicket}} : tickets</h5>
+    </ion-card>
+    
+  </div> -->
+
+
+  <div class="container"  *ngIf="eais">
+  <div >
+    <ion-card mode="ios" class="card">
+      <div class="back">
+        <h1>Mon Ticket<span>design <i>&</i> photography</span></h1>
+        <ul>
+          <li>{{rec.ticket}}</li>
+          <li>{{rec.categorie.nom}}: {{rec.categorie.prix}}</li>
+          
+          <li>{{rec.nombreTicket}} tickets </li>
+          </ul>
+      </div>
+    </ion-card>
+    </div>
+  </div>
+</ion-content>
+<ion-footer >
+  <ion-button color="primary" expand="block" vertical="center"  mode="ios" (click)="scanTicket()" >Je Scan</ion-button>
+</ion-footer>

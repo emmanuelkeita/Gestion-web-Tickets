@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Connexion
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <img class="img" src="assets/image/02.jpeg"  alt="">
+ <ion-card class="car">
+  
+  <ion-item>
+    <ion-label  placeholder="emmakeita04@gamil.com">Email:</ion-label>
+   <ion-input  [(ngModel)] ="mail" type="mail"></ion-input>
+   </ion-item>
+   
+   <ion-item>
+    <ion-label placeholder="votre ModDePasse" >Password:</ion-label>
+   <ion-input [(ngModel)] ="motDePasse" type="Password"></ion-input>
+   </ion-item><br>
+
+   <ion-grid>
+     <ion-row>
+       <ion-col size="6">
+        <ion-button expand="block" (click)="goToScan()" color="tertiary " > Connexion</ion-button>
+       </ion-col>
+       <ion-col size="6">
+        <ion-button expand="block" (click)="Inscription()" color="success" > Inscription</ion-button>
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+
+ </ion-card>
+  
+  
+  
+   
+</ion-content>
