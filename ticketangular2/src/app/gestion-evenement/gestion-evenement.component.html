@@ -1,0 +1,53 @@
+<mat-card>
+  <form [formGroup]="form" class="normal-form">
+    <mat-grid-list cols="2" rowHeight="300px">
+      <mat-grid-tile>
+        <div class="controles container">
+        
+          <div>
+            <mat-form-field class="example-full-width">
+              <input formControlName="titre" matInput placeholder="titre*">
+              <mat-error>Veuillez Remplir le Champs</mat-error>
+            </mat-form-field>
+          </div>
+         <div>
+          <mat-form-field class="example-full-width">
+            <input formControlName="date" matInput placeholder="date*">
+            <mat-error>Veuillez Remplir le Champs</mat-error>
+          </mat-form-field>
+         </div>
+          <div>
+            <mat-form-field class="example-full-width">
+              <input formControlName="prix" matInput placeholder="prix*">
+              <mat-error>Veuillez Remplir le Champs</mat-error>
+            </mat-form-field> 
+          </div>
+        </div>
+      </mat-grid-tile>
+  
+      <mat-grid-tile>
+        <div class="controles container">
+          <div>
+            <mat-form-field class="example-full-width">
+              <input formControlName="images" matInput placeholder="images">
+            </mat-form-field> 
+          </div>
+          <mat-form-field class="example-full-width" >
+            <mat-select formControlName="categorie" placeholder="categorie*">
+              <mat-error>Veuillez Remplir le Champs</mat-error>
+              <mat-option>categorie</mat-option>
+              <ng-container *ngFor="let dat of categorie">
+                <mat-option value="{{dat.id}}"> {{dat.value}} </mat-option>
+              </ng-container>
+            </mat-select>
+          </mat-form-field>
+         
+            <div class="button-row">
+              <button mat-raised-button color="primary" type="submit" expand="block">Envoyer</button>
+              <button mat-raised-button color="warn"  expand="block" (click)="onClear()" >Effacer</button>
+            </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
+</mat-card>

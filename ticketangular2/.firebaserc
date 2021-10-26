@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ticket-5332c": {
+      "hosting": {
+        "ticketangular2": [
+          "ticket-5332c"
+        ]
+      }
+    }
+  }
+}

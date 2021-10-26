@@ -1,0 +1,42 @@
+mat-toolbar{
+    position: sticky;
+    top:0;    
+    z-index: 100;
+    // background: #2b224d;
+    
+   }
+   
+   ul{
+       li{
+           list-style: none;
+       }
+   }
+   
+   button{
+       border: 0;
+       outline:none;
+       background: transparent;
+   }
+   ul{
+    
+       margin-left: 465%;
+   }
+   
+   .user{
+       font-size: 14px;
+   }
+   .user-image{
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+   }
+   .user-iamge-icon{
+       height: 18px;
+       font-size: 16px ;
+       
+   }
+   ::ng-deep{
+       .mat-menu-content{
+           width: 160px;
+       }
+   }
